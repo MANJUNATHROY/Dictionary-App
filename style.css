@@ -1,0 +1,144 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #4d59fb;
+
+}
+
+.wrapper {
+    width: 500px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 30px 30px 45px;
+}
+
+.wrapper .info {
+    color: #9a9a9a
+}
+
+.wrapper ul {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    /* display: none; */
+}
+
+.wrapper.active ul {
+    height: 500px;
+    opacity: 1;
+    /* display: none; */
+}
+
+.wrapper header {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.wrapper .search {
+    margin: 35px 0 45px;
+}
+
+.search input {
+    height: 55px;
+    width: 85%;
+    border-radius: 7px;
+    padding: 0 40px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #999;
+}
+
+/* .search:where(i, span) {
+    
+   
+} */
+
+.search i {
+    margin-top: 30px;
+    transform: translateY(-50%);
+    position: absolute;
+    margin-left: 10px;
+    color: #999;
+    font-size: 15px;
+    pointer-events: none;
+}
+
+.search button {
+    background: #4d59fb;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 20px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    /* display: none; */
+}
+
+/* .search input:valid ~ span{
+    display: block;
+} */
+
+.wrapper ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+ul .word p {
+    font-size: 22px;
+    font-weight: 550;
+}
+
+ul .word span {
+    font-size: 17px;
+    color: #989898
+}
+
+ul .word i {
+    color: #999;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+ul .content {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+ul .content::-webkit-scrollbar {
+    width: 0px;
+}
+
+.content li .details {
+    border-left: 3px solid #4d59fb;
+    padding-left: 10px;
+    border-radius: 7px;
+    text-underline-position: under;
+}
+
+.content li .details p {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.content li .details span {
+    font-size: 15px;
+    color: #7e7e7e
+}
+
+.synonyms .details .list {
+    display: flex;
+    cursor: pointer;
+}
+
+.synonyms .details .list span {
+    margin-right: 5px;
+}
